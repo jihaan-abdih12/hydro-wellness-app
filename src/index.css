@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes wave {
+  0% { transform: translateX(-50%) translateY(0) rotate(0deg); }
+  50% { transform: translateX(0%) translateY(-5px) rotate(180deg); }
+  100% { transform: translateX(-50%) translateY(0) rotate(360deg); }
+}
+
+.animate-wave {
+  animation: wave 8s infinite linear;
+}
